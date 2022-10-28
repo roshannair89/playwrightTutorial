@@ -9,4 +9,3 @@ def test_page(playwright: Playwright):
     contact_page = ContactPage(page)
     contact_page.navigate()
     contact_page.submit_form("Roshan", "123 dalton tr", "abc@gmail.com", "123456", "Test", "Test message")
-    page.set_default_timeout(3000)
