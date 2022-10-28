@@ -4,7 +4,7 @@ from pom.POM import ContactPage
 
 
 def test_page(playwright: Playwright):
-    browser = playwright.chromium.launch(headless=False, slow_mo=1000)
+    browser = playwright.chromium.launch()
     page = browser.new_page()
     contact_page = ContactPage(page)
     contact_page.navigate()
